@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fondamento', cursive;
+    background-image: url("fondo-d20.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media (max-width: 767.98px){
+    body{
+        background-position: right;
+    }
+}
+h1, h2, h3{
+    text-align: center;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    margin: 145px 0;
+}
+img{
+    width: 200px;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-10px, -10px, 0);
+    }
+
+    20%, 80% {
+        transform: translate3d(20px, 20px, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-30px, -30px, 0);
+    }
+
+    40%, 60% {
+        transform: translate3d(40px, 40px, 0);
+    }
+}
+@-webkit-keyframes shake {
+    10%, 90% {
+        transform: translate3d(-10px, 0, 0);
+    }
+    
+    20%, 80% {
+        transform: translate3d(20px, 0, 0);
+    }
+    
+    30%, 50%, 70% {
+        transform: translate3d(-30px, 0, 0);
+    }
+    
+    40%, 60% {
+        transform: translate3d(40px, 0, 0);
+    }
+}
+.cont-dice:hover{
+    -webkit-animation: shake 2s linear infinite;
+    animation: shake 2s linear infinite;
+}
+.btn_animated:hover{
+    -webkit-animation: 3s rotate linear infinite;
+    animation: 2s rotate linear infinite;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
